@@ -1,0 +1,19 @@
+digraph pastafarianism {
+ordering=out;
+graph [fontname="times-roman"];
+node [fontname="times-roman"];
+edge [fontname="times-roman"];
+"Navigate to offload zone" [fillcolor=orange, fontcolor=black, fontsize=9, label="Ⓜ Navigate to offload zone", shape=box, style=filled];
+"Choose route" [fillcolor=cyan, fontcolor=black, fontsize=9, label="Ⓜ Choose route", shape=octagon, style=filled];
+"Navigate to offload zone" -> "Choose route";
+"Take path 2" [fillcolor=orange, fontcolor=black, fontsize=9, label="Ⓜ Take path 2", shape=box, style=filled];
+"Choose route" -> "Take path 2";
+"GateOpen?" [fillcolor=gray, fontcolor=black, fontsize=9, label="GateOpen?", shape=ellipse, style=filled];
+"Take path 2" -> "GateOpen?";
+DrivePath2 [fillcolor=gray, fontcolor=black, fontsize=9, label=DrivePath2, shape=ellipse, style=filled];
+"Take path 2" -> DrivePath2;
+DrivePath1 [fillcolor=gray, fontcolor=black, fontsize=9, label=DrivePath1, shape=ellipse, style=filled];
+"Choose route" -> DrivePath1;
+Arrive [fillcolor=gray, fontcolor=black, fontsize=9, label=Arrive, shape=ellipse, style=filled];
+"Navigate to offload zone" -> Arrive;
+}
